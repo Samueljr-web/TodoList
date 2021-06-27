@@ -1,0 +1,84 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body{
+  background: #eee;
+  min-height: 100vh;
+  font-family: "poppins", Sans-Serif;
+}
+
+h2,
+form{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+form input,
+form button{
+  background:#fff;
+  padding: 0.5rem;
+  border: 1px solid #5e9fea;
+  margin: 5px;
+}
+
+form input{
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+form button {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+  background:#5e9fea;
+  padding: 0.5rem;
+  width: 2.2rem;
+  color: #fff;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo{
+    background:#fff;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0.5rem;
+    padding: 5px;
+    width: 13rem;
+    border-radius: 3px;
+    margin-left: 3rem;
+    }
+.todo li{
+  flex: 2;
+  list-style: none;
+}
+
+.checkBtn,
+.trashBtn{
+  background: tomato;
+  margin: 0.1rem;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+.checkBtn{
+  background: green;
+}
+ .fa-check,
+ .fa-trash{
+   pointer-events: none;
+ }
+ .checked{
+   text-decoration: line-through;
+   opacity: 0.5;
+ }
